@@ -9,6 +9,11 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { BreadcrumbsComponent } from './shared/breadcrumbs/breadcrumbs.component';
+import { ScrollTopComponent } from './shared/scroll-top/scroll-top.component';
+import { QuickSidebarComponent } from './shared/quick-sidebar/quick-sidebar.component';
+import { FooterComponent } from './shared/footer/footer.component';
+
+
 
 
 @NgModule({
@@ -19,7 +24,11 @@ import { BreadcrumbsComponent } from './shared/breadcrumbs/breadcrumbs.component
     DashboardComponent,
     HeaderComponent,
     SidebarComponent,
-    BreadcrumbsComponent
+    BreadcrumbsComponent,
+    ScrollTopComponent,
+    QuickSidebarComponent,
+    FooterComponent,
+
   ],
   imports: [
     BrowserModule

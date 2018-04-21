@@ -1,6 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+// importamos las Rutas
+import { APP_ROUTES } from './app.routes';
+
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -12,6 +15,9 @@ import { BreadcrumbsComponent } from './shared/breadcrumbs/breadcrumbs.component
 import { ScrollTopComponent } from './shared/scroll-top/scroll-top.component';
 import { QuickSidebarComponent } from './shared/quick-sidebar/quick-sidebar.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { PagesComponent } from './pages/pages.component';
+import { RegisterComponent } from './login/register.component';
+
 
 
 
@@ -28,10 +34,14 @@ import { FooterComponent } from './shared/footer/footer.component';
     ScrollTopComponent,
     QuickSidebarComponent,
     FooterComponent,
+    PagesComponent,
+    RegisterComponent,
+
 
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    APP_ROUTES
   ],
   providers: [],
   bootstrap: [AppComponent]

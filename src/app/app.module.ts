@@ -1,48 +1,38 @@
+// importacion de las librerias necesarias de node_modules para que funcione este modulo
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-// importamos las Rutas
+// importacion de los modulos de las carpetas de la aplicacion
+
+// importamos el modulo principal de las Rutas
 import { APP_ROUTES } from './app.routes';
 
+// importamos los modulos hijos de las carpetas de la aplicacion al modulo principal
+import { PagesModule } from './pages/pages.module';
 
+// importamos los Componentes de las carpetas de la aplicacion que necesitemos que funcionen globalmente
 import { AppComponent } from './app.component';
+
+// importamos los Componentes de la carpeta login
 import { LoginComponent } from './login/login.component';
-import { NopagefoundComponent } from './shared/nopagefound/nopagefound.component';
-import { DashboardComponent } from './pages/dashboard/dashboard.component';
-import { HeaderComponent } from './shared/header/header.component';
-import { SidebarComponent } from './shared/sidebar/sidebar.component';
-import { BreadcrumbsComponent } from './shared/breadcrumbs/breadcrumbs.component';
-import { ScrollTopComponent } from './shared/scroll-top/scroll-top.component';
-import { QuickSidebarComponent } from './shared/quick-sidebar/quick-sidebar.component';
-import { FooterComponent } from './shared/footer/footer.component';
-import { PagesComponent } from './pages/pages.component';
 import { RegisterComponent } from './login/register.component';
-
-
-
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    NopagefoundComponent,
-    DashboardComponent,
-    HeaderComponent,
-    SidebarComponent,
-    BreadcrumbsComponent,
-    ScrollTopComponent,
-    QuickSidebarComponent,
-    FooterComponent,
-    PagesComponent,
     RegisterComponent,
 
 
   ],
   imports: [
     BrowserModule,
-    APP_ROUTES
+    APP_ROUTES,
+    PagesModule,
+
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })

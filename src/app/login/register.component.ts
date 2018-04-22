@@ -1,3 +1,4 @@
+// importacion de las librerias necesarias de node_modules para que funcione este modulo
 import { Component, OnInit } from '@angular/core';
 
 @Component({

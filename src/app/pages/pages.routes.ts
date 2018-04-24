@@ -6,6 +6,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { PagesComponent } from './pages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { UsuariosComponent } from './usuarios/Usuarios.component';
+import { ProgressComponent } from './progress/progress.component';
 // import { NopagefoundComponent } from './shared/nopagefound/nopagefound.component';
 
 
@@ -16,6 +17,7 @@ const pagesRoutes: Routes = [
         children: [
             { path: 'dashboard', component: DashboardComponent},
             { path: 'usuarios', component: UsuariosComponent},
+            { path: 'progress', component: ProgressComponent},
             { path: '', redirectTo: '/dashboard', pathMatch: 'full'}, // si no exixte la pagina redirecionamos a la pagina dashboard
         ]
 

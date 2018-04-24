@@ -8,6 +8,8 @@ import { PAGES_ROUTES } from './pages.routes';
 import { PagesComponent } from './pages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { UsuariosComponent } from './usuarios/Usuarios.component';
+import { ProgressComponent } from './progress/progress.component';
+
 // Ruta del modulo del template de la aplicacion para que funcionen las paginas
 import { SharedModule } from '../shared/shared.module';
 
@@ -18,8 +20,8 @@ import { SharedModule } from '../shared/shared.module';
     declarations: [
         PagesComponent,
         DashboardComponent,
-        UsuariosComponent
-
+        UsuariosComponent,
+        ProgressComponent
 
     ],
 
@@ -30,10 +32,11 @@ import { SharedModule } from '../shared/shared.module';
     ],
 
 
-    // exportamos los componentes necesarios para poder trabajar en fuera de pages
+    // exportamos los componentes necesarios para poder trabajar fuera de pages
     exports: [
         DashboardComponent,
-        UsuariosComponent
+        UsuariosComponent,
+        ProgressComponent
     ],
     providers: [],
 
